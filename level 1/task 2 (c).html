@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+        }
+
+        /* Calculator Body */
+        .calculator {
+            background: #2c3e50;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            width: 280px;
+            text-align: center;
+        }
+
+        /* Display Screen */
+        .display {
+            background: #ecf0f1;
+            color: black;
+            font-size: 28px;
+            text-align: right;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* Input Fields */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 20px;
+            border: none;
+            border-radius: 6px;
+            text-align: right;
+            background: #fff;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            border: none;
+            background: #27ae60;
+            color: white;
+            font-size: 22px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #229954;
+            box-shadow: 0 0 8px rgba(39, 174, 96, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="result">0</div>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="calculateSum()">+</button>
+    </div>
+
+    <script>
+        function calculateSum() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                let sum = num1 + num2;
+                document.getElementById("result").innerHTML = sum;
+            } else {
+                document.getElementById("result").innerHTML = "Error";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+

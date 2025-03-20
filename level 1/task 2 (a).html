@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Delight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://w0.peakpx.com/wallpaper/324/709/HD-wallpaper-ice-cream-summer-fruits-corn.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            transition: background 0.5s ease-in-out;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background 0.3s;
+        }
+        .clicked {
+            background: #ff4500 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form>
+            <button type="button" onclick="changeColor(this)">Get Your Ice Cream</button>
+        </form>
+    </div>
+    <script>
+        function changeColor(button) {
+            button.classList.toggle("clicked");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
