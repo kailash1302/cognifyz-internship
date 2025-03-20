@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerful Anime Characters Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Slideshow Styles */
+        .slideshow-container {
+            position: relative;
+            width: 800px;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .slideshow {
+            display: flex;
+            width: 400%;
+            animation: slide 20s infinite;
+        }
+        .slideshow img {
+            width: 800px;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            100% { transform: translateX(0%); }
+        }
+    </style>
+</head>
+<body>
+    <h2>Powerful Anime Characters Slideshow</h2>
+    
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <img src="https://framerusercontent.com/images/oEP6XuKT91CkfZ4v5VzvS65xPNI.jpg">
+            <img src="https://i.pinimg.com/736x/79/2d/a7/792da78023d8a2c9a36485c84fc63fd9.jpg">
+            <img src="https://wallpapers.com/images/hd/itachi-mangekyou-sharingan-kbuo0aq5ucbtuufl.jpg">
+            <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/03/hashirama-from-naruto.jpg">
+        </div>
+    </div>
+</body>
+</html>
+
